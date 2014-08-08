@@ -42,7 +42,12 @@ html
 				.col-xs-12
 					== markdown :footer, :layout => false
 		javascript:
-			$('button').click(function() {
+			function redirect() {
 				var redirect = $('input').val() || "http://maybewise.bandcamp.com/album/welcome-to-the-fishbowl"
 				window.location = "http://"+window.location.hostname + '/' + redirect;
-			})
+			}
+			$('button').click(redirect())
+
+			$(document).keypress(function(e) {
+				if(e.which == 13) { redirect() }
+			});
