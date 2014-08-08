@@ -2,7 +2,7 @@ require 'bundler'
 Bundler.require
 
 require 'open-uri'
-require 'JSON'
+require 'json'
 
 def errorPage(message, code)
 	# redirect '/'

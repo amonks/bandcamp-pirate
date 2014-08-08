@@ -1,0 +1,22 @@
+# Logfile created on 2014-08-08 07:48:42 -0400 by logger.rb/44203
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Starting the New Relic agent in "development" environment.
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Reading configuration from config/newrelic.yml
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Environment: development
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Dispatcher: puma
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Application: My Application (Development)
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Installing Net instrumentation
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Installing Sinatra instrumentation
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Installing deferred Rack instrumentation
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Installing Rack::Builder middleware instrumentation
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Finished instrumentation
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Doing deferred dependency-detection before Rack startup
+[08/08/14 07:48:42 -0400 gofannon (37436)] INFO : Reporting to: https://rpm.newrelic.com/accounts/735912/applications/4066350
+[08/08/14 07:49:09 -0400 gofannon (37460)] WARN : Ignoring addition of cpu because it is already registered.
+[08/08/14 07:49:09 -0400 gofannon (37460)] WARN : Ignoring addition of memory because it is already registered.
+[08/08/14 07:49:09 -0400 gofannon (37460)] WARN : Ignoring addition of vm because it is already registered.
+[08/08/14 07:49:09 -0400 gofannon (37462)] WARN : Ignoring addition of cpu because it is already registered.
+[08/08/14 07:49:09 -0400 gofannon (37462)] WARN : Ignoring addition of memory because it is already registered.
+[08/08/14 07:49:09 -0400 gofannon (37462)] WARN : Ignoring addition of vm because it is already registered.
+[08/08/14 07:49:10 -0400 gofannon (37460)] INFO : Reporting to: https://rpm.newrelic.com/accounts/735912/applications/4066350
+[08/08/14 07:49:10 -0400 gofannon (37462)] INFO : Reporting to: https://rpm.newrelic.com/accounts/735912/applications/4066350
