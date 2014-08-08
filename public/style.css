@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -250px;
+}
+#push {
+  height: 250px;
+}
+#footer {
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  height: 150px;
+}

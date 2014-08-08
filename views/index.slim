@@ -1,0 +1,48 @@
+doctype html
+html
+	head
+		title Pirate!
+
+		/ jquery
+		script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+
+		/ bootstrap js
+		script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"
+
+		/ custom css
+		link href="/style.css" rel="stylesheet"
+
+		/ bootstrap css
+		link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"
+
+		/ octicons
+		link href="/octicons/octicons.css" rel="stylesheet"
+
+	body
+		#wrap
+			.container
+				.row
+					.col-xs-12
+						h2 Bandcamp Pirate
+					.col-xs-12.col-md-8
+						== markdown :description, :layout => false
+						.form-inline
+							input.form-control placeholder="http://maybewise.bandcamp.com/album/welcome-to-the-fishbowl" type="text" 
+							button.btn.btn-default type="button"  Ahoy!
+					.col-xs-12.col-md-4
+						- if @error
+							.alert.alert-danger
+								== markdown :error, :layout => false
+								== markdown @error, :layout => false
+						- if @urls
+							== slim :pirate
+			#push
+		.container
+			#footer.row
+				.col-xs-12
+					== markdown :footer, :layout => false
+		javascript:
+			$('button').click(function() {
+				var redirect = $('input').val() || "http://maybewise.bandcamp.com/album/welcome-to-the-fishbowl"
+				window.location = "http://"+window.location.hostname + '/' + redirect;
+			})

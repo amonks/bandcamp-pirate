@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+ruby '2.1.2'
+
+gem 'sinatra'
+gem 'sinatra-contrib'
+# gem 'pry'
+gem 'newrelic_rpm'
+gem 'kramdown'
+gem 'sass'
+gem 'slim'
+gem 'puma'
